@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+</head>
+<body>
+  <!-- This file helps Netlify detect the form -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="tel" name="phone" />
+    <select name="interest">
+      <option value="Voice Lessons">Voice Lessons</option>
+      <option value="Piano Lessons">Piano Lessons</option>
+      <option value="Songwriting Lessons">Songwriting Lessons</option>
+      <option value="Guitar Lessons">Guitar Lessons</option>
+      <option value="Mindset Coaching">Mindset Coaching</option>
+      <option value="Music Lessons + Coaching">Music Lessons + Coaching</option>
+      <option value="General Inquiry">General Inquiry</option>
+    </select>
+    <textarea name="message"></textarea>
+  </form>
+</body>
+</html>

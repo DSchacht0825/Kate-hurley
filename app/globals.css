@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    @apply bg-navy-dark text-white antialiased;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-gold to-peach bg-clip-text text-transparent;
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+
+  .fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
