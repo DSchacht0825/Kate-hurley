@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['www.katehurley.com'],
+    unoptimized: true, // Required for Netlify static export
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.katehurley.com',
+      },
+    ],
   },
 };
 
